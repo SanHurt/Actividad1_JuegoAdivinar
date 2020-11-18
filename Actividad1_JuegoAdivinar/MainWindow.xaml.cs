@@ -28,7 +28,7 @@ namespace Actividad1_JuegoAdivinar
             else if (numUser < numeroGenerado)
                 mensajeTextBlock.Text = "Te has quedado corto";
             else
-                mensajeTextBlock.Text = "Te has pasado"; 
+                mensajeTextBlock.Text = "Te has pasado";  
         }
 
         private void reiniciarButton_Click(object sender, RoutedEventArgs e)
