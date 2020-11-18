@@ -1,0 +1,59 @@
+﻿<Window x:Class="Actividad1_JuegoAdivinar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad1_JuegoAdivinar"
+        mc:Ignorable="d"
+        Title="Actividad1"
+        Height="181.5"
+        Width="615.5"
+        Icon="48.ico">
+    <Grid Margin="0,0,2,2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*" />
+            <ColumnDefinition Width="606*" />
+            <ColumnDefinition Width="71*" />
+            <ColumnDefinition Width="50*" />
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="numeroUserTextBox"
+                 HorizontalAlignment="Left"
+                 Height="16"
+                 Margin="164,38,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="28"
+                 Grid.Column="1" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="3,38,0,0"
+                   TextWrapping="Wrap"
+                   Text="¿Qué número he pensado?"
+                   VerticalAlignment="Top"
+                   Width="150"
+                   Grid.Column="1" />
+        <Button  x:Name="comprobarButton"
+                 Content="Comprobar"
+                 HorizontalAlignment="Left"
+                 Margin="183,90,0,0"
+                 VerticalAlignment="Top"
+                 Width="76"
+                 Click="comprobarButton_Click"
+                 Grid.Column="1" />
+        <Button  x:Name="reiniciarButton"
+                 Content="Reiniciar"
+                 HorizontalAlignment="Left"
+                 Margin="283,90,0,0"
+                 VerticalAlignment="Top"
+                 Width="76"
+                 RenderTransformOrigin="-0.369,-5.735"
+                 Click="reiniciarButton_Click"
+                 Grid.Column="1" />
+        <TextBlock x:Name="mensajeTextBlock"
+                   HorizontalAlignment="Left"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Margin="383,38,0,0"
+                   Grid.Column="1" />
+
+    </Grid>
+    </Window>
